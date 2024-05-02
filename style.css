@@ -63,6 +63,21 @@ html{
     font-size: 2rem;
     margin-top: 1rem;
 }
+.fa-xmark{
+    color: white;
+}
+.collapse{
+    z-index: 10;
+    /* padding: 2rem 2rem; */
+}
+.fa-xmark{
+    z-index: 20;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.fa-xmark:hover{
+    cursor: pointer;
+}
 .info{
     position: absolute;
     padding:  0 4rem 0 4rem;
@@ -78,9 +93,9 @@ html{
     flex-basis: 50%;
 }
 .info-col-1 h1{
-    font-size: clamp(2.7rem,6vw,4rem);
-    
+    font-size: clamp(2.9rem,6vw,4rem);
     margin-top: 0;
+    font-weight: 700;
     
 }
 .navbar-nav li :hover{
@@ -98,18 +113,19 @@ html{
 .info-col-2{
     display: flex;
     align-items: end;
-    height: 400px;
-    flex-basis: 30%;
+    padding-top: 400px;
+    flex-basis: 20%;
     position: relative;
+    line-height: 1.5rem;
 }
 .info-col-2 p{
     text-align: end;
     position: absolute;
     bottom: 0px;
     right: 0px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .horizontal-line{
     position: absolute;
@@ -133,10 +149,13 @@ html{
     padding: 0 5rem;
     display: flex;
     justify-content: space-between;
-    bottom: 80px;
+    bottom: 50px;
 }
 .icon i{
     font-size: 1.4rem;
+}
+.icon i:hover{
+    cursor: pointer;
 }
 
 @media(max-width:1150px){
@@ -147,6 +166,12 @@ html{
 }
 
 @media(max-width:830px){
+    
+    .container-fluid{
+        padding-left:2rem ;
+        
+    }
+    
     .info{
         padding:  0 2rem;
         display: flex;
@@ -163,12 +188,13 @@ html{
     }
     .info-col-2{
         position: relative;
-        height: 200px;
         flex-basis: 100%;
+        padding-top: 150px;
+
         
     }
     .info-col-2 p{
-        bottom: 10px;
+        bottom: 1.7rem;
     }
     .navbar-brand{
         font-size: 1.3rem;
@@ -435,7 +461,7 @@ html{
 }
 
 .fifth-section{
-    padding: 0 4rem;
+    padding: 4rem 4rem 0 4rem;
     height: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -459,7 +485,7 @@ html{
     height: 100%;
     position: absolute;
     left: 3.3rem;
-    bottom: 3.2rem;
+    bottom: 3rem;
 }
 .fifth-section-col-2 h5{
     position: relative;
@@ -468,7 +494,6 @@ html{
     letter-spacing: 3px;
     left: 12rem;
     opacity: 0.9;
-    /* bottom: 2rem; */
 }
 
 .template-section-2-content-head h2{
@@ -499,7 +524,7 @@ html{
 }
 @media(max-width:840px){
     .fifth-section{
-        padding: 0 1rem 0 0;
+        padding: 2rem 1rem 0 0;
     }
     .fifth-section-col-1{
         flex-basis: 100%;
@@ -578,7 +603,9 @@ html{
 .person-info p{
     font-weight: 600;
     line-height: 1.7rem;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
+    font-size: 14px;
+    opacity: 0.9;
 }
 .slider-information-1{
     position: absolute;
@@ -740,6 +767,7 @@ html{
         align-content: space-between;
         justify-content: center;
         text-align: center;  
+        padding-left: 0px;
     }
     .footer-link ul li{
         margin-top: 2rem;
@@ -751,4 +779,8 @@ html{
     .up-arrow{
         margin-top: 2rem;
     }
+}
+
+.disable{
+    display: none;
 }
