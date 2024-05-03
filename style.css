@@ -68,7 +68,6 @@ html{
 }
 .collapse{
     z-index: 10;
-    /* padding: 2rem 2rem; */
 }
 .fa-xmark{
     z-index: 20;
@@ -173,7 +172,7 @@ html{
     }
     
     .info{
-        padding:  0 2rem;
+        padding:  0 1rem;
         display: flex;
         justify-content: flex-end;
         align-content: space-between;
@@ -273,7 +272,7 @@ html{
         max-width: 100%;
     }
     .info-section{
-        padding: 2rem 2rem;
+        padding: 1rem 1rem;
     }
 }
 
@@ -333,6 +332,11 @@ html{
     .img-text{
         width: 80%;
     }
+    .third-section{
+        padding: 1rem;
+        
+    }
+   
 }
 .slider-section{
     display: flex;
@@ -423,6 +427,9 @@ html{
     .two{
         height: 60vh;
     }
+    .slider-section-info{
+        padding: 1rem;
+      }
 }
 
 .template-section{
@@ -462,7 +469,6 @@ html{
 
 .fifth-section{
     padding: 4rem 4rem 0 4rem;
-    height: 800px;
     display: flex;
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -686,6 +692,9 @@ html{
     .footer-container img{
         height: 70vh;
 
+    }
+    .footer-container img{
+        padding: 1rem;
     }
 }
 .footer{
